@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel = "stylesheet" type = "text/css" href = "envir.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	
+</head>
+<body>
+	<div class = "container">
+		<!-- stack title -->
+		<div class = "row">
+			<div class = "col s12 white-text" style = "text-align: left; margin-top: 30px; font-size: 35px;">
+				<span class = "red-text">S</span><span class = "blue-text">T</span><span class = "green-text">A</span><span class = "yellow-text">C</span><span class = "orange-text">K</span>
+			</div>
+		</div>
+
+		<!-- messages -->
+		<div class = "row">
+			<div class = "col s4">
+				<p id = "pushMessage" style = "font-size: 20px; visibility: hidden; font-weight: bold;"></p>
+			</div>
+			<div class = "col s4">
+				<p id = "info" style = "color: black; font-size: 20px; font-weight: bold"></p>
+			</div>
+			<div class = "col s4">
+				<p id = "popMessage" style = "font-size: 20px; visibility: hidden; font-weight: bold;"></p>
+			</div>
+		</div>
+
+		<!-- push element -->
+		<div class = "row" style = "margin-top: 110px">
+			<div id = "form" class = "col s4">
+				<div class="row">
+		          <div class="input-field col s6">
+		            <input id = "pushElement" type="text">
+		            <label for = "push">Push Item</label>
+		          </div>
+		          <div class = "col s6">
+		          	<input type = "button" class = "btn btn-small blue waves-effect" value = "push" id = "pushBtn" style = "margin-top: 20px">
+		          </div>
+	         	</div>
+			</div>
+
+			<!-- the box -->
+			<div class = "col s4">
+				<div id = "main-box" class = "row">
+					<div class = "col s12 black-text" id = "box-10" style = "height: 30px; text-align: center"></div>
+					<div class = "col s12 black-text" id = "box-9" style = "height: 30px; text-align: center"><span><b></b></span></div>
+					<div class = "col s12 black-text" id = "box-8" style = "height: 30px; text-align: center"><span><b></b></span></div>
+					<div class = "col s12 black-text" id = "box-7" style = "height: 30px; text-align: center"><span><b></b></span></div>
+					<div class = "col s12 black-text" id = "box-6" style = "height: 30px; text-align: center"><span><b></b></span></div>
+					<div class = "col s12 black-text" id = "box-5" style = "height: 30px; text-align: center"><span><b></b></span></div>
+					<div class = "col s12 black-text" id = "box-4" style = "height: 30px; text-align: center"><span><b></b></span></div>
+					<div class = "col s12 black-text" id = "box-3" style = "height: 30px; text-align: center"><span><b></b></span></div>
+					<div class = "col s12 black-text" id = "box-2" style = "height: 30px; text-align: center"><span><b></b></span></div>
+					<div class = "col s12 black-text" id = "box-1" style = "height: 27px; text-align: center; border-bottom: 1px solid #9fbfb8"><span><b></b></span></div>
+			
+				</div>
+			</div>
+
+			<!-- pop element -->
+			<div class = "pop col s4">
+				<input type = "button" class = "btn btn-small green waves-effect" value = "pop" id = "popBtn" style = "margin-top: 20px">
+			</div>
+		</div>
+		
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type = "text/javascript" src = "app.js"></script>
+</body>
+</html>
